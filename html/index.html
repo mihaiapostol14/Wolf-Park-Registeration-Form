@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wolf Park Registration</title>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Create Account</h2>
+    <form action="#" method="POST" id="registerForm">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" required minlength="6">
+      </div>
+      <div class="input-group">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password" id="confirmpassword" name="confirmpassword" required minlength="6">
+      </div>
+      
+      <button type="submit">Register</button>
+      <div id="message"></div>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+  
+<link rel="stylesheet" href="../css/style.css" />
+<script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>
