@@ -1,0 +1,152 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url('../assets/image/background.jpg') center/cover no-repeat;
+}
+
+/* AUTH WRAPPER */
+.auth {
+  width: 100%;
+  max-width: 380px;
+}
+
+/* GLASS CARD */
+.auth__card {
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 35px 28px;
+
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* TITLE */
+.auth__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* FORM */
+.form__group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* INPUT */
+.form__input {
+  width: 100%;
+  padding: 12px 45px;
+  border-radius: 30px;
+
+  border: 1px solid transparent;
+  outline: none;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+
+  transition: all 0.3s ease;
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* INPUT FOCUS EFFECT */
+.form__input:focus {
+  border: 1px solid #00ffc8;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 200, 0.4);
+}
+
+/* ICON LEFT */
+.form__icon {
+  position: absolute;
+  left: 15px;
+  top: 38px;
+  color: #ccc;
+}
+
+/* TOGGLE PASSWORD */
+.form__toggle {
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form__toggle:hover {
+  color: #00ffc8;
+}
+
+/* BUTTON */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn--primary {
+  background: linear-gradient(135deg, #00ffc8, #00bfff);
+  color: #000;
+  transition: 0.3s;
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 255, 200, 0.4);
+}
+
+/* MESSAGE */
+.form__message {
+  margin-top: 12px;
+  text-align: center;
+  color: #ff6b6b;
+  min-height: 20px;
+}
+
+/* FOOTER */
+.auth__footer {
+  text-align: center;
+  margin-top: 15px;
+  color: #ddd;
+}
+
+.auth__footer a {
+  color: #00ffc8;
+  text-decoration: none;
+}
+
+.auth__footer a:hover {
+  text-decoration: underline;
+}
